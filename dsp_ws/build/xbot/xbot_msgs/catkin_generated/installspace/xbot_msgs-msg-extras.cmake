@@ -1,0 +1,2 @@
+set(xbot_msgs_MESSAGE_FILES "msg/CoreSensor.msg;msg/ExtraSensor.msg;msg/Echo.msg;msg/InfraRed.msg;msg/Imu.msg;msg/RawImu.msg;msg/Battery.msg;msg/KeyboardInput.msg;msg/XbotState.msg;msg/NaviState.msg;msg/FaceResult.msg;msg/XbotPose.msg;msg/AutoDockingAction.msg;msg/AutoDockingActionGoal.msg;msg/AutoDockingActionResult.msg;msg/AutoDockingActionFeedback.msg;msg/AutoDockingGoal.msg;msg/AutoDockingResult.msg;msg/AutoDockingFeedback.msg")
+set(xbot_msgs_SERVICE_FILES "")

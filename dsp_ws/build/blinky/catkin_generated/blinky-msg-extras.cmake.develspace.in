@@ -1,0 +1,2 @@
+set(blinky_MESSAGE_FILES "/home/dsp/dsp_ws/devel/share/blinky/msg/FaceAction.msg;/home/dsp/dsp_ws/devel/share/blinky/msg/FaceActionGoal.msg;/home/dsp/dsp_ws/devel/share/blinky/msg/FaceActionResult.msg;/home/dsp/dsp_ws/devel/share/blinky/msg/FaceActionFeedback.msg;/home/dsp/dsp_ws/devel/share/blinky/msg/FaceGoal.msg;/home/dsp/dsp_ws/devel/share/blinky/msg/FaceResult.msg;/home/dsp/dsp_ws/devel/share/blinky/msg/FaceFeedback.msg")
+set(blinky_SERVICE_FILES "")

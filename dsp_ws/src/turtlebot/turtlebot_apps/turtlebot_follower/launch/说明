@@ -1,0 +1,2 @@
+follower_new.launch是校长来演示自己改的。
+注意在CMakeLists.txt文件中修改具体使用的src中的follow代码,有包含语音的和不包含语音的:follower.cpp是语音控制跟随开始和结束，followerNoVoice.cpp是不带语音控制的，follow_task.cpp是比赛中用的

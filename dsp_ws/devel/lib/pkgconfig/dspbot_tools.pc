@@ -1,0 +1,8 @@
+prefix=/home/dsp/dsp_ws/devel
+
+Name: dspbot_tools
+Description: Description of dspbot_tools
+Version: 0.0.0
+Cflags: -I/home/dsp/dsp_ws/devel/include
+Libs: -L/home/dsp/dsp_ws/devel/lib 
+Requires: dynamic_reconfigure

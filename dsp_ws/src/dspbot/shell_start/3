@@ -1,0 +1,2 @@
+#!/bin/bash
+ roslaunch dspbot_nav navigation_demo.launch map:=1105.yaml

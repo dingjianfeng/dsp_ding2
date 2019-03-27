@@ -1,0 +1,14 @@
+#!/bin/bash
+
+log_file=/tmp/dspbot-upstart.log
+DATE=`date`
+echo "$DATE: dspbot-stop" >> $log_file
+
+source /opt/ros/kinetic/setup.bash
+source /home/dspbot_ws/devel/setup.bash
+
+for i in $( rosnode list ); do
+    rosnode kill $i;
+done
+
+killall roslaunch

@@ -1,0 +1,6 @@
+set(dspbot_tools_SETUP_PY_VERSION "0.0.0")
+set(dspbot_tools_SETUP_PY_SCRIPTS "")
+set(dspbot_tools_SETUP_PY_PACKAGES "dspbot_tools")
+set(dspbot_tools_SETUP_PY_PACKAGE_DIRS "src/dspbot_tools")
+set(dspbot_tools_SETUP_PY_MODULES "")
+set(dspbot_tools_SETUP_PY_MODULE_DIRS "")

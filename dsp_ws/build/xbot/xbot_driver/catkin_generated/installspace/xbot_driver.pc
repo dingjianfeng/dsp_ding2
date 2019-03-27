@@ -1,0 +1,8 @@
+prefix=/home/dsp/dsp_ws/install
+
+Name: xbot_driver
+Description: Description of xbot_driver
+Version: 1.2.1
+Cflags: -I/home/dsp/dsp_ws/install/include
+Libs: -L/home/dsp/dsp_ws/install/lib -lxbot
+Requires: ecl_command_line ecl_converters ecl_devices ecl_geometry ecl_mobile_robot ecl_sigslots ecl_time

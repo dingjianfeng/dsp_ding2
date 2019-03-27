@@ -1,0 +1,8 @@
+prefix=/home/dsp/dsp_ws/devel
+
+Name: rbx2_utils
+Description: Description of rbx2_utils
+Version: 0.1.0
+Cflags: -I/home/dsp/dsp_ws/devel/include
+Libs: -L/home/dsp/dsp_ws/devel/lib 
+Requires: dynamic_reconfigure message_runtime

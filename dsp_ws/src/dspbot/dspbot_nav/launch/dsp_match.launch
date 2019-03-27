@@ -1,0 +1,20 @@
+<launch>
+  <!--include file="$(find dspbot_nav)/launch/dsp_2018.launch"/-->
+
+  <include file="$(find turtlebot_follower)/launch/follower_dsp_match.launch"/>
+  
+  <include file="$(find dspbot_vision)/launch/ros2opencv2.launch"/>
+  
+  <include file="$(find dspbot_vision)/launch/object_tracker.launch"/>
+  
+  <node pkg="dspbot_voice"  type="xf_asr_node"  name="xf_asr_node"  output="screen"></node>
+  
+  <node pkg="dspbot_voice"  type="xf_tts_node" name="xf_tts_node"  output="screen"></node>
+  
+  <!--node pkg="hrobot_tools"  type="listener_ding.py" name="listener_ding"  output="screen"></node-->
+
+  <!--node pkg="cute_bringup"  type="arm_ding.py" name="arm_ding"  output="screen"></node-->
+  
+  
+  <include file="$(find dspbot_rviz)/launch/display.launch"/>
+</launch>  

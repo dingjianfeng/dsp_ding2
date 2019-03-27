@@ -1,0 +1,12 @@
+[Unit]
+Description=dspbot startup
+
+[Service]
+Restart=always
+RestartSec=30
+ExecStart=/usr/sbin/dspbot-start 
+ExecStop=/usr/sbin/dspbot-stop
+ExecRestart=/usr/sbin/dspbot-restart
+
+[Install]
+WantedBy=multi-user.target

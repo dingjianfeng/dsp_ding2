@@ -1,0 +1,57 @@
+#BNF+IAT 1.0 UTF-8;
+!grammar test;
+!slot <cmdA>;
+!slot <cmdB>;
+!slot <cmdC>;
+!slot <cmdD>;
+!slot <cmdE>;
+!slot <cmdF>;
+!slot <cmdG>;
+!slot <cmdH>;
+!slot <cmdI>;
+!slot <cmdJ>;
+!slot <cmdK>;
+!slot <cmdL>;
+
+
+!start <mainaction>;
+<mainaction>:<cmd1>|<cmd2>|<cmd3>|<cmd4>|<cmd5>|<cmd6>|<cmd7>|<cmd8>|<cmd9>|<cmd10>|<cmd11>|<cmd12>|<test>|<followstart>|<followend>;
+
+<cmd1>:<cmdA>;
+<cmd2>:<cmdB>;
+<cmd3>:<cmdC>;
+<cmd4>:<cmdD>;
+<cmd5>:<cmdE>;
+<cmd6>:<cmdF>;
+<cmd7>:<cmdG>;
+<cmd8>:<cmdH>;
+<cmd9>:<cmdI>;
+<cmd10>:<cmdJ>;
+<cmd11>:<cmdK>;
+<cmd12>:<cmdL>;
+
+
+<cmdA>:中国首都是哪个城市;
+<cmdB>:给我们讲个绕口令吧;
+<cmdC>:介绍一下你自己;
+
+<cmdD>:前进;
+<cmdE>:停止;
+<cmdF>:后退;
+
+<cmdG>:左转;
+<cmdH>:右转;
+<cmdI>:你多大了;
+
+<cmdJ>:去客厅找到郭晓萍;
+<cmdK>:去厨房拿橙汁给在客厅的张三;
+<cmdL>:去厨房拿雪碧给在客厅的张三;
+
+
+
+
+<test>:今天星期几;
+<followstart>:跟随开始;
+<followend>:跟随结束;
+
+

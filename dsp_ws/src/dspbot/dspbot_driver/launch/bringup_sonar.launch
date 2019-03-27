@@ -1,0 +1,6 @@
+<launch>
+   <node name="dspbot_driver" pkg="dspbot_driver" type="dspbot_driver_sonar.py" output="screen">
+      <rosparam file="$(find dspbot_driver)/config/my_dspbot_params.yaml" command="load" />
+   </node>
+</launch>
+

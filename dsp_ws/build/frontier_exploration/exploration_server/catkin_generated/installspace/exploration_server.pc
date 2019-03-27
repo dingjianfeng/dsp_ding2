@@ -1,0 +1,8 @@
+prefix=/home/dsp/dsp_ws/install
+
+Name: exploration_server
+Description: Description of exploration_server
+Version: 0.4.2
+Cflags: -I/home/dsp/dsp_ws/install/include
+Libs: -L/home/dsp/dsp_ws/install/lib 
+Requires: actionlib costmap_2d exploration_msgs roscpp

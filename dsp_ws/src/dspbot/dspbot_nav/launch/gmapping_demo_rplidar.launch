@@ -1,0 +1,29 @@
+<launch>
+  <include file="$(find dspbot_driver)/launch/demo.launch"/>
+
+
+
+  <node name="rplidarNode"          pkg="rplidar_ros"  type="rplidarNode" output="screen">
+  <param name="serial_port"         type="string" value="/dev/rplidar"/>  
+  <param name="serial_baudrate"     type="int"    value="115200"/>
+  <param name="frame_id"            type="string" value="laser"/>
+  <param name="inverted"            type="bool"   value="false"/>
+  <param name="angle_compensate"    type="bool"   value="true"/>
+  </node>
+
+ 
+
+  <include file="$(find dspbot_description)/launch/dspbot_description.launch"/>
+
+  <node pkg="tf" type="static_transform_publisher" name="base_link_to_laser" 
+   args="0.15 0.0 0.10 -3.14 0.0 0.0 /base_footprint /laser 40" />
+
+  <include file="$(find dspbot_nav)/launch/include/odom/gmapping.launch"/>
+  <include file="$(find dspbot_nav)/launch/include/odom/teb_move_base.launch"/>
+
+<!--
+  <include file="$(find world_canvas_server)/launch/world_canvas_server.launch"/>
+  <include file="$(find rosbridge_server)/launch/rosbridge_websocket.launch"/>
+  <node name="robot_pose_publisher" pkg="robot_pose_publisher" type="robot_pose_publisher" />
+-->
+</launch>

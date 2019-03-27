@@ -1,0 +1,14 @@
+<launch>
+	<node pkg="dspbot_voice"  type="xf_awake_node"  name="xf_awake_node"  output="screen"></node>
+	<node pkg="dspbot_voice"  type="xf_asr_online_node"  name="xf_asr_online_node"  output="screen"></node>
+	<node pkg="dspbot_voice"  type="tuling_arv_node"  name="tuling_arv_node"  output="screen"></node>
+	<node pkg="dspbot_voice"  type="xf_tts_node" name="xf_tts_node"  output="screen"></node>
+	<node name="voice_all"  pkg="dspbot_voice"  type="voice_all.py"  output="screen">
+		<param name="scale_linear"  value="0.5"  type="double"/>
+		<param name="scale_angular"  value="1.5" type="double"/>
+		<param name="max_speed" value="0.3"/>
+		<param name="start_speed" value="0.1"/>
+		<param name="linear_increment" value="0.05"/>
+		<param name="angular_increment" value="0.4"/>
+	</node>	
+</launch>

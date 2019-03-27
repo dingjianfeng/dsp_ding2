@@ -1,0 +1,4 @@
+<launch>
+	<node pkg="dspbot_voice"  type="xf_asr_node"  name="xf_asr_node"  output="screen"></node>
+	<node pkg="dspbot_voice"  type="xf_tts_node" name="xf_tts_node"  output="screen"></node>
+</launch>

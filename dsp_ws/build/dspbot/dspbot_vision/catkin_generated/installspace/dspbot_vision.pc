@@ -1,0 +1,8 @@
+prefix=/home/dsp/dsp_ws/install
+
+Name: dspbot_vision
+Description: Description of dspbot_vision
+Version: 0.4.0
+Cflags: 
+Libs: -L/home/dsp/dsp_ws/install/lib 
+Requires: 

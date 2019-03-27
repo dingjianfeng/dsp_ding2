@@ -1,0 +1,9 @@
+#!/bin/bash
+
+log_file=/tmp/dspbot-upstart.log
+DATE=`date`
+echo "$DATE: dspbot-stop" >> $log_file
+
+/usr/sbin/dspbot-stop
+sleep 2
+/usr/sbin/dspbot-start 

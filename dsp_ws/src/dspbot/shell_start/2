@@ -1,0 +1,3 @@
+#!/bin/bash
+roslaunch rbx2_gui rosbridge.launch 
+

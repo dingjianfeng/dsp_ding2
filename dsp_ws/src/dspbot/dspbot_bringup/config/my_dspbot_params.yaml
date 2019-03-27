@@ -1,0 +1,27 @@
+port: /dev/dspbot
+baud: 115200
+timeout: 0.1
+rate: 50
+sensorstate_rate: 10
+
+useImu: False
+use_base_controller: True
+base_controller_rate: 50
+
+# For a robot that uses base_footprint, change base_frame to base_footprint
+#base_frame: base_link
+base_frame: base_footprint
+
+# === Robot drivetrain parameters
+wheel_diameter: 0.105
+wheel_track: 0.209
+encoder_resolution: 1441
+gear_reduction: 4
+motors_reversed: False
+
+# === PID parameters
+Kp: 19
+Kd: 6.7
+Ki: 3.6
+Ko: 0
+accel_limit: 1.0

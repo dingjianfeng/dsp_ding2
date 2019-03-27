@@ -1,0 +1,8 @@
+prefix=/home/dsp/dsp_ws/install
+
+Name: blinky
+Description: Description of blinky
+Version: 0.1.0
+Cflags: -I/home/dsp/dsp_ws/install/include
+Libs: -L/home/dsp/dsp_ws/install/lib 
+Requires: message_runtime
